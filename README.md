@@ -1,13 +1,13 @@
 # CASDA_query
 
-If you make use of this of code for a publication, please acknowledge this repo.
-
+Query the ASKAP archive for all observation around a certain coordinates. Build lightcurves from source catalogues and upper limits from cutouts.
 
 ### Notes/updates
 Included an example for PSRJ1837–0616
+Include column in summary dataframe that describes the survey the observation was part of.
 
-Optimized both fatching of urls using the casda.cutout module and downloading of files.
-Even for sources with over 100 ASKAP observation, the cutout/catalogue downloading now finishes in 10-15 mins (when requestion both Stokes I and Stokes V).
+Optimized both fetching of urls using the casda.cutout module and downloading of files.
+Even for sources with over 100 ASKAP observation, the cutout/catalogue downloading now finishes in 10-15 mins (when requesting both Stokes I and Stokes V).
 TO DO: optimize the batch sizes.
 
 ---
