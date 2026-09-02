@@ -376,7 +376,12 @@ def prep_urls_catalogues_obsid(obsid_list, casda):
         
         # filter out the unreleased data
         cat_data = casda.filter_out_unreleased(data)
-        url_list = casda.stage_data(cat_data)
+        try:
+            url_list = casda.stage_data(cat_data)
+        except Exception as e:
+            print(f"Failed to stage catalogue for obs_id={obsid}: {e}")
+            continue
+        #url_list = casda.stage_data(cat_data)
         
         url_list = [url for url in url_list if url.endswith('.checksum')==False]
         url_list_total.extend(url_list)
