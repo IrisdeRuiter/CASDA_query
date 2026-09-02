@@ -2,6 +2,12 @@
 
 Query the ASKAP archive for all observation around a certain coordinates. Build lightcurves from source catalogues and upper limits from cutouts.
 
+### Updates 2/9/2026
+Included example for J1912-44 and ASKAPJ1839-0756.
+Included a reprojection function that will transform the WCS header for Galactic to equatorial coordinates. This is necessary for the new VAST Galactic fields (which are now aligned with the Galactic plane). 
+Made catalogue initialisation more robust against errors.
+
+
 ### Notes/updates
 Included an example for PSRJ1837–0616
 
