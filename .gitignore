@@ -1,5 +1,10 @@
 .DS_Store
 .ipynb_checkpoints/
+CASDA_query_WIP.ipynb
+CASDA_query_detections_only.ipynb
+EMU_master_crossmatch/
+RACS_master_crossmatch/
+larp_investigation.csv
 data_new/
 future/
 old/
